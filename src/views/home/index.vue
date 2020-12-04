@@ -1,13 +1,16 @@
 <template>
     <div class="home-container">
-       首页
+       <swipe />
     </div>
 </template>
 
 <script>
+    import Swipe from '@/components/Swipe'
     export default {
         name: 'Home',
-        components: {},
+        components: {
+            Swipe
+        },
         data() {
             return {}
         },

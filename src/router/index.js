@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
-
+const tabBar = () => import('@/components/tabBar')
 const routes = [
     {
         path: '/',
@@ -26,7 +26,34 @@ const routes = [
     {
         path: '/home',
         name: 'Home',
-        component: () => import('@/views/Home')
+        components: {
+            default: () => import('@/views/home/index'),
+            tabBar: tabBar
+        }
+    },
+    {
+        path: '/category',
+        name: 'Category',
+        components: {
+            default: () => import('@/views/category/index'),
+            tabBar: tabBar
+        }
+    },
+    {
+        path: '/news',
+        name: 'News',
+        components: {
+            default: () => import('@/views/news/index'),
+            tabBar: tabBar
+        }
+    },
+    {
+        path: '/platform',
+        name: 'Platform',
+        components: {
+            default: () => import('@/views/platform/index'),
+            tabBar: tabBar
+        }
     }
 ]
 
