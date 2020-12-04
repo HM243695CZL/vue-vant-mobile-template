@@ -40,6 +40,14 @@ const routes = [
         }
     },
     {
+      path: '/enter-name',
+      name: 'EnterName',
+      components: {
+          default: () => import('@/views/enterName/index'),
+          tabBar: tabBar
+      }
+    },
+    {
         path: '/news',
         name: 'News',
         components: {

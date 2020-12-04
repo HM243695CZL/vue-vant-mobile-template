@@ -2,8 +2,8 @@
     <div class="tab-bar-container">
         <van-tabbar v-model="active">
             <van-tabbar-item
-                    icon="home-o"
                     v-for="item in tabBarList"
+                    :icon="item.icon"
                     :key="item.id"
                     :to="item.path"
             >{{item.name}}</van-tabbar-item>
@@ -22,31 +22,31 @@
                         id: 1,
                         name: '首页',
                         path: '/home',
-                        icon: 'home-o'
+                        icon: 'wap-home'
                     },
                     {
                         id: 2,
                         name: '分类',
                         path: '/category',
-                        icon: 'home-o'
+                        icon: 'point-gift'
                     },
                     {
                         id: 3,
                         name: '挂号',
-                        path: '/category',
-                        icon: 'home-o'
+                        path: '/enter-name',
+                        icon: 'service'
                     },
                     {
                         id: 4,
                         name: '消息',
                         path: '/news',
-                        icon: 'home-o'
+                        icon: 'comment'
                     },
                     {
                         id: 5,
                         name: '我的',
                         path: '/platform',
-                        icon: 'home-o'
+                        icon: 'manager'
                     }
                 ]
             }
