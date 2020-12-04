@@ -32,12 +32,18 @@
                     },
                     {
                         id: 3,
+                        name: '挂号',
+                        path: '/category',
+                        icon: 'home-o'
+                    },
+                    {
+                        id: 4,
                         name: '消息',
                         path: '/news',
                         icon: 'home-o'
                     },
                     {
-                        id: 4,
+                        id: 5,
                         name: '我的',
                         path: '/platform',
                         icon: 'home-o'
