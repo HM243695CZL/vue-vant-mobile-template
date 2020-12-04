@@ -1,5 +1,5 @@
 # gjt-web
-
+# vue-vant移动端快速开发模板
 ## Project setup
 ```
 npm install
